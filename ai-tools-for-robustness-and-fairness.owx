@@ -52,6 +52,7 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Adversarial_Robustness_Toolbox</IRI>
         <Literal xml:lang="en">https://github.com/Trusted-AI/adversarial-robustness-toolbox</Literal>
+        <Literal xml:lang="en">tested</Literal>
     </AnnotationAssertion>
 </Ontology>
 
