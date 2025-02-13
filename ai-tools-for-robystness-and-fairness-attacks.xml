@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ByTool"/>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AdversarialEmbeddingBackdoorAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AdversarialEmbeddingBackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Adversarial Embedding Backdoor Attack (Tan and Shokri, 2019)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#Attacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#Attacks">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Root class for all attack types in the ontology.</rdfs:comment>
+        <rdfs:label>Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AudioAdversarialSpeech -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AudioAdversarialSpeech">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Audio Adversarial Examples: Targeted Attacks on Speech-to-Text (Carlini and Wagner, 2018): A targeted attack on speech-to-text systems using audio adversarial examples.</rdfs:comment>
+        <rdfs:label>Audio Adversarial Examples: Targeted Attacks on Speech-to-Text</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AutoAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AutoAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Auto-Attack (Croce and Hein, 2020): A fast and effective attack algorithm designed for evasion in machine learning.</rdfs:comment>
+        <rdfs:comment>Auto-Attack runs evasion attacks on classification tasks. ([Croce and Hein, 2020](https://arxiv.org/abs/2003.01690))</rdfs:comment>
+        <rdfs:label>Auto-Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AutoPGD -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#AutoPGD">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Auto Projected Gradient Descent (Auto-PGD) (Croce and Hein, 2020): An enhanced version of PGD, designed for faster computation.</rdfs:comment>
+        <rdfs:comment>Auto Projected Gradient Descent attacks classification and optimizes its attack strength. ([Croce and Hein, 2020](https://arxiv.org/abs/2003.01690))</rdfs:comment>
+        <rdfs:label>Auto Projected Gradient Descent (Auto-PGD)</rdfs:label>
+        <rdfs:label>Auto-PGD</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BackdoorAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Backdoor Attack (Gu et al., 2017)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BackdoorAttackDGM -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BackdoorAttackDGM">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Backdoor Attack on Deep Generative Models (DGM) (Rawat et al., 2021)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:comment>BadDet attacks target object detection systems by exploiting model vulnerabilities.</rdfs:comment>
+        <rdfs:label>BadDet Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetGlobalMisclassificationAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetGlobalMisclassificationAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetAttacks"/>
+        <rdfs:label>BadDet Global Misclassification Attack (GMA)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetObjectDisappearanceAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetObjectDisappearanceAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetAttacks"/>
+        <rdfs:label>BadDet Object Disappearance Attack (ODA)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetObjectGenerationAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetObjectGenerationAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetAttacks"/>
+        <rdfs:label>BadDet Object Generation Attack (OGA)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetRegionalMisclassificationAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetRegionalMisclassificationAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BadDetAttacks"/>
+        <rdfs:label>BadDet Regional Misclassification Attack (RMA)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#EvasionAttacks"/>
+        <rdfs:comment>Attacks that do not assume any knowledge of the model&apos;s internals, instead relying on querying the model.</rdfs:comment>
+        <rdfs:label>Black-box Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BrendelBethgeAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BrendelBethgeAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Brendel and Bethge Attack (Brendel et al., 2019): A method for generating robust adversarial examples.</rdfs:comment>
+        <rdfs:label>Brendel and Bethge Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BullseyePolytope -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BullseyePolytope">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Bullseye Polytope (Aghakhani et al., 2020)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#CleanLabelBackdoorAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#CleanLabelBackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Clean-Label Backdoor Attack (Turner et al., 2018)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#CleanLabelFeatureCollisionAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#CleanLabelFeatureCollisionAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Clean Label Feature Collision Attack (Shafahi et al., 2018)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#DPatch -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#DPatch">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>DPatch (Liu et al., 2018): A deep learning attack based on optimizing perturbations for successful evasion.</rdfs:comment>
+        <rdfs:label>DPatch</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#EvasionAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#EvasionAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#MLModelsAttacks"/>
+        <rdfs:comment>These attacks aim to deceive the machine learning model into making incorrect predictions.</rdfs:comment>
+        <rdfs:label>Evasion Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ExtractionAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ExtractionAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#MLModelsAttacks"/>
+        <rdfs:comment>This class includes extraction attacks on ML models.</rdfs:comment>
+        <rdfs:label>ExtractionAttacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#GradientMatchingWitchesBrewAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#GradientMatchingWitchesBrewAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Gradient Matching / Witches&apos; Brew Attack (Geiping et al., 2020)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#HCLUAattack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#HCLUAattack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>High Confidence Low Uncertainty (HCLU) Attack (Grosse et al., 2018): A method for generating adversarial examples with high confidence and low uncertainty for adversarial robustness.</rdfs:comment>
+        <rdfs:label>High Confidence Low Uncertainty (HCLU) Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#HiddenTriggerBackdoorAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#HiddenTriggerBackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Hidden Trigger Backdoor Attack (Saha et al., 2019)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ImperceptibleAdversarialSpeech -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ImperceptibleAdversarialSpeech">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Imperceptible, Robust, and Targeted Adversarial Examples for Automatic Speech Recognition (Qin et al., 2019): Adversarial attacks designed to target speech-to-text models.</rdfs:comment>
+        <rdfs:label>Imperceptible, Robust, and Targeted Adversarial Examples for Automatic Speech Recognition</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#MLModelsAttacks"/>
+        <rdfs:comment>This class includes inference attacks on ML models.</rdfs:comment>
+        <rdfs:label>InferenceAttacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#IterativeFrameSaliency -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#IterativeFrameSaliency">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Iterative Frame Saliency (Inkawhich et al., 2018): An attack focusing on perturbations in frame saliency for evading deep learning models.</rdfs:comment>
+        <rdfs:label>Iterative Frame Saliency</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#LLMModelsAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#LLMModelsAttacks">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ByModelType"/>
+        <rdfs:comment>This class is empty for now and can include future attacks related to large language models (LLMs).</rdfs:comment>
+        <rdfs:label>LLMModelsAttacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#MLModelsAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#MLModelsAttacks">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#ByModelType"/>
+        <rdfs:comment>This class includes various attacks that target machine learning models.</rdfs:comment>
+        <rdfs:label>MLModelsAttacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PEMalwareAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PEMalwareAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>PE Malware Attacks (Suciu et al., 2018, Demetrio et al., 2020, Demetrio et al., 2019): An adversarial attack targeting machine learning models used in cybersecurity for malware detection.</rdfs:comment>
+        <rdfs:label>PE Malware Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttackSVM -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttackSVM">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Poisoning Attack on Support Vector Machines (SVM) (Biggio et al., 2013)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#MLModelsAttacks"/>
+        <rdfs:comment>This class includes poisoning attacks on ML models.</rdfs:comment>
+        <rdfs:label>PoisoningAttacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#RobustDPatch -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#RobustDPatch">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Robust DPatch (Liu et al., 2018, Lee and Kolter, 2019): A robust version of DPatch designed to handle adversarial environments.</rdfs:comment>
+        <rdfs:label>Robust DPatch</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ShadowAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ShadowAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Shadow Attack (Ghiasi et al., 2020): An attack leveraging shadow models to generate adversarial examples.</rdfs:comment>
+        <rdfs:label>Shadow Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#SleeperAgentAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#SleeperAgentAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#PoisoningAttacks"/>
+        <rdfs:label>Sleeper Agent Attack (Souri et al., 2021)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#TargetedUniversalAdversarialPerturbations -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#TargetedUniversalAdversarialPerturbations">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Targeted Universal Adversarial Perturbations (Hirano and Takemoto, 2019): A method that targets a wide range of inputs using universal perturbations.</rdfs:comment>
+        <rdfs:label>Targeted Universal Adversarial Perturbations</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WassersteinAttack -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WassersteinAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks"/>
+        <rdfs:comment>Wasserstein Attack (Wong et al., 2020): A type of attack based on optimal transport theory to generate adversarial examples.</rdfs:comment>
+        <rdfs:label>Wasserstein Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks -->
+
+    <Class rdf:about="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#WhiteBoxAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#EvasionAttacks"/>
+        <rdfs:comment>Attacks that assume access to the model&apos;s internals (e.g., gradients, weights).</rdfs:comment>
+        <rdfs:label>White-box Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ByModelType -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ByModelType">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#Attacks"/>
+    </Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#ByTool -->
+
+    <Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#ByTool">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#Attacks"/>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#AdversarialEmbeddingBackdoorAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#AdversarialEmbeddingBackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Adversarial Embedding Backdoor Attack (Tan and Shokri, 2019): A backdoor attack that uses adversarial embedding to poison the model during training.</rdfs:comment>
+        <rdfs:label>Adversarial Embedding Backdoor Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#AttributeInference -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#AttributeInference">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks"/>
+        <rdfs:comment>Attribute Inference attacks aim to infer sensitive attributes about the data based on model outputs.</rdfs:comment>
+        <rdfs:label>Attribute Inference</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#AttributeInferenceBlackBox -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#AttributeInferenceBlackBox">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#AttributeInference"/>
+        <rdfs:comment>Black-box attribute inference attacks rely on the model&apos;s output without direct access to the model&apos;s parameters or architecture.</rdfs:comment>
+        <rdfs:label>Attribute Inference Black-Box</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#AttributeInferenceWhiteBox -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#AttributeInferenceWhiteBox">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#AttributeInference"/>
+        <rdfs:comment>White-box attacks on attribute inference assume the attacker has full access to the model&apos;s architecture and weights.</rdfs:comment>
+        <rdfs:label>Attribute Inference White-Box</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#BackdoorAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#BackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Backdoor Attack (Gu et al., 2017): An attack where a model is trained to misclassify inputs when triggered by a backdoor pattern.</rdfs:comment>
+        <rdfs:label>Backdoor Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#BackdoorAttackDGM -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#BackdoorAttackDGM">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Backdoor Attack on Deep Generative Models (DGM) (Rawat et al. 2021): A backdoor attack targeting deep generative models.</rdfs:comment>
+        <rdfs:label>Backdoor Attack on Deep Generative Models (DGM)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#BadDetAttacks -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#BadDetAttacks">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>BadDet Attacks (Chan et al., 2022): A family of attacks that exploits detection algorithms to poison the training set.</rdfs:comment>
+        <rdfs:label>BadDet Attacks</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#BoundaryAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#BoundaryAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Decision-based/Boundary Attack (Brendel et al., 2018): A black-box attack that modifies the input using decision boundaries of the model.</rdfs:comment>
+        <rdfs:label>Decision-based/Boundary Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#BullseyePolytope -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#BullseyePolytope">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Bullseye Polytope (Aghakhani et al., 2020): A poisoning attack on machine learning models using polytope-based perturbations.</rdfs:comment>
+        <rdfs:label>Bullseye Polytope</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#CleanLabelBackdoorAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#CleanLabelBackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Clean-Label Backdoor Attack (Turner et al., 2018): A backdoor attack where the injected data does not contain any label information but still leads to misclassification during inference.</rdfs:comment>
+        <rdfs:label>Clean-Label Backdoor Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#CleanLabelFeatureCollisionAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#CleanLabelFeatureCollisionAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Clean Label Feature Collision Attack (Shafahi et al., 2018): An attack where malicious training data causes a collision of features, leading to misclassification.</rdfs:comment>
+        <rdfs:label>Clean Label Feature Collision Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#CopycatCNN -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#CopycatCNN">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ExtractionAttacks"/>
+        <rdfs:comment>Copycat CNN (Correia-Silva et al., 2018): An extraction attack targeting convolutional neural networks by copying the model&apos;s architecture and parameters.</rdfs:comment>
+        <rdfs:label>Copycat CNN</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#FunctionallyEquivalentExtraction -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#FunctionallyEquivalentExtraction">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ExtractionAttacks"/>
+        <rdfs:comment>Functionally Equivalent Extraction (Jagielski et al., 2019): An attack where a model is extracted by using a functionally equivalent surrogate model.</rdfs:comment>
+        <rdfs:label>Functionally Equivalent Extraction</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#GeoDA -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#GeoDA">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Geometric Decision-based Attack (GeoDA) (Rahmati et al., 2020): A black-box attack based on geometric analysis of decision boundaries.</rdfs:comment>
+        <rdfs:label>Geometric Decision-based Attack (GeoDA)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#GradientMatchingWitchesBrewAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#GradientMatchingWitchesBrewAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Gradient Matching / Witches&apos; Brew Attack (Geiping et al., 2020): A poisoning attack that matches the gradient of the poisoned data with the gradients of the target model.</rdfs:comment>
+        <rdfs:label>Gradient Matching / Witches&apos; Brew Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#HiddenTriggerBackdoorAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#HiddenTriggerBackdoorAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Hidden Trigger Backdoor Attack (Saha et al., 2019): An attack where the trigger pattern is hidden and does not appear in the training data, yet causes a misclassification during inference.</rdfs:comment>
+        <rdfs:label>Hidden Trigger Backdoor Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#HopSkipJumpAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#HopSkipJumpAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>HopSkipJump Attack (Chen et al., 2019): A targeted black-box attack that leverages optimization with a limited number of queries.</rdfs:comment>
+        <rdfs:label>HopSkipJump Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#KnockoffNets -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#KnockoffNets">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ExtractionAttacks"/>
+        <rdfs:comment>KnockoffNets (Orekondy et al., 2018): An attack that extracts a model&apos;s parameters by creating knockoff models with similar behavior.</rdfs:comment>
+        <rdfs:label>KnockoffNets</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#MembershipInference -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#MembershipInference">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks"/>
+        <rdfs:comment>Membership Inference attacks aim to determine whether a specific data point was part of the model&apos;s training set.</rdfs:comment>
+        <rdfs:label>Membership Inference</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#MembershipInferenceBlackBox -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#MembershipInferenceBlackBox">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks"/>
+        <rdfs:comment>Black-box membership inference attacks do not have access to model internals, only querying the model.</rdfs:comment>
+        <rdfs:label>Membership Inference Black-Box</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#MembershipInferenceBlackBoxRuleBased -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#MembershipInferenceBlackBoxRuleBased">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks"/>
+        <rdfs:label>Membership Inference Black-Box Rule-Based</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#ModelInversion -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#ModelInversion">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks"/>
+        <rdfs:comment>Model inversion attacks exploit adversarial access to a model to extract information about its training data.</rdfs:comment>
+        <rdfs:label>Model Inversion</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#PixelAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#PixelAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Pixel Attack (Vargas et al., 2019, Su et al., 2019): A black-box attack where pixel-level perturbations are used to mislead the model.</rdfs:comment>
+        <rdfs:label>Pixel Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#PoisoningAttackSVM -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#PoisoningAttackSVM">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Poisoning Attack on Support Vector Machines (SVM) (Biggio et al., 2013): An attack where malicious data is injected to mislead the training process of an SVM.</rdfs:comment>
+        <rdfs:label>Poisoning Attack on Support Vector Machines (SVM)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#QueryEfficientBlackBox -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#QueryEfficientBlackBox">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Query-efficient Black-box (Ilyas et al., 2017): A black-box attack that minimizes the number of queries required for evasion.</rdfs:comment>
+        <rdfs:label>Query-efficient Black-box</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Reconstruction -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#Reconstruction">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#InferenceAttacks"/>
+        <rdfs:comment>Reconstruction attacks attempt to recover missing data from a model&apos;s training dataset.</rdfs:comment>
+        <rdfs:label>Reconstruction</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#SimBA -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#SimBA">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Simple Black-box Adversarial (SimBA) (Guo et al., 2019): A simple and efficient black-box attack method.</rdfs:comment>
+        <rdfs:label>Simple Black-box Adversarial (SimBA)</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#SleeperAgentAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#SleeperAgentAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Sleeper Agent Attack (Souri et al., 2021): A poisoning attack that activates a backdoor trigger only after a certain number of training steps.</rdfs:comment>
+        <rdfs:label>Sleeper Agent Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#SpatialTransformation -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#SpatialTransformation">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Spatial Transformation (Engstrom et al., 2017): A technique that applies geometric transformations to inputs for black-box attacks.</rdfs:comment>
+        <rdfs:label>Spatial Transformation</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#SquareAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#SquareAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Square Attack (Andriushchenko et al., 2020): A powerful attack based on patch-based perturbations for black-box settings.</rdfs:comment>
+        <rdfs:label>Square Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#ThresholdAttack -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#ThresholdAttack">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Threshold Attack (Vargas et al., 2019): An attack that manipulates the decision boundary by exploiting threshold shifts.</rdfs:comment>
+        <rdfs:label>Threshold Attack</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#ZOO -->
+
+    <Class rdf:about="http://www.w3.org/2002/07/owl#ZOO">
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#ART"/>
+        <rdfs:subClassOf rdf:resource="file:/home/alberto/repos/ai-tools-for-robustness-and-fairness-ontology/attacks.xml#BlackBoxAttacks"/>
+        <rdfs:comment>Zeroth Order Optimisation (ZOO) (Chen et al., 2017): A black-box attack that uses zeroth-order optimization for adversarial perturbation generation.</rdfs:comment>
+        <rdfs:label>Zeroth Order Optimisation (ZOO)</rdfs:label>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
