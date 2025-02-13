@@ -43,6 +43,16 @@
         <Class IRI="#RedTeaming"/>
         <NamedIndividual IRI="#Adversarial_Robustness_Toolbox"/>
     </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Adversarial_Robustness_Toolbox</IRI>
+        <Literal xml:lang="en"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Adversarial_Robustness_Toolbox</IRI>
+        <Literal xml:lang="en">https://github.com/Trusted-AI/adversarial-robustness-toolbox</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
