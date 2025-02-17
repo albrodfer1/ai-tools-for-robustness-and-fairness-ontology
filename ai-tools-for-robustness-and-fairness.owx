@@ -13,28 +13,82 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#BlueTeaming"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Difficulty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Explainability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fairness"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hard"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MLSecurity"/>
+        <Class IRI="#MLSecurityAndFairness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RedTeaming"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AIF360"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AIX360"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Adversarial_Robustness_Toolbox"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#BlueTeaming"/>
+        <Class IRI="#MLSecurityAndFairness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explainability"/>
+        <Class IRI="#MLSecurityAndFairness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fairness"/>
+        <Class IRI="#MLSecurityAndFairness"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Hard"/>
         <Class IRI="#Difficulty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RedTeaming"/>
-        <Class IRI="#MLSecurity"/>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Difficulty"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedTeaming"/>
+        <Class IRI="#MLSecurityAndFairness"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Fairness"/>
+        <NamedIndividual IRI="#AIF360"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medium"/>
+        <NamedIndividual IRI="#AIF360"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explainability"/>
+        <NamedIndividual IRI="#AIX360"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medium"/>
+        <NamedIndividual IRI="#AIX360"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BlueTeaming"/>
+        <NamedIndividual IRI="#Adversarial_Robustness_Toolbox"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Hard"/>
         <NamedIndividual IRI="#Adversarial_Robustness_Toolbox"/>
@@ -51,7 +105,6 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Adversarial_Robustness_Toolbox</IRI>
-        <Literal xml:lang="en">https://github.com/Trusted-AI/adversarial-robustness-toolbox</Literal>
         <Literal xml:lang="en">tested</Literal>
     </AnnotationAssertion>
 </Ontology>
